@@ -1,0 +1,126 @@
+body {
+  padding-top: 50px;
+}
+#hetop{
+  display:block;
+}
+.textbox{
+  width: 100%;
+  padding: 6px 12px;
+  word-wrap: break-word;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.textbox p{
+  margin: 0;
+}
+a.href{
+  font-weight: bold;
+  text-decoration: underline;
+}
+pre{
+  background-color: white;
+}
+pre::before{
+  content: 'JSON: ';
+  font-weight: bold;
+}
+.jumbotron{
+	border-radius: 4px;
+}
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+.nav-sidebar {
+  margin-right: -21px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a {
+  color: #fff;
+  background-color: #339EDD;
+}
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  #hetop{
+    display: none;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+.jumbotron{
+  background-color: #f5f5f5 !important;
+  border: 1px solid #eee;
+  padding-top: 10px;
+}
+progress{
+	width: 100%;
+	margin-top: 10px;
+    height: 16px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+}
+progress::-webkit-progress-bar {
+  height: 16px;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+}
+progress::-webkit-progress-value {
+	height: 16px;
+	border-radius: 6px;
+	background-color: #339EDD;
+}
+progress::-moz-progress-bar {
+  height: 16px;
+  border-radius: 6px;
+    background-color: #339EDD;
+}
+.form-control{
+	overflow: hidden;
+}
