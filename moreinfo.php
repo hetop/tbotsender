@@ -54,7 +54,7 @@
                         <li><a href="./sendvoice.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить голосовое сообщение</a> </li>
                         <li><a href="./sendvideonote.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить видеозаметку</a></li>
                         <ol style="list-style: none">
-                            <li class="active navbar-right" style="text-align: right; font-size: 11px; color: grey; margin-right: 15px;">Telegram Bot Sender v.0.5.3α<br>created by hetop</li>
+                            <li class="active navbar-right" style="text-align: right; font-size: 11px; color: grey; margin-right: 15px;">Telegram Bot Sender v.0.6.1α<br>created by hetop</li>
                         </ol>
                     </ul>
                 </div>
@@ -75,7 +75,7 @@
                         <li><a href="./sendvideonote.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить видеозаметку</a></li>
                     </ul>
                     <ol class="breadcrumb">
-                        <li class="active navbar-right" style="text-align: right; font-size: 11px;">Telegram Bot Sender v.0.5.3α<br>created by hetop</li>
+                        <li class="active navbar-right" style="text-align: right; font-size: 11px;">Telegram Bot Sender v.0.6.1α<br>created by hetop</li>
                     </ol>
                 </div>
                 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">

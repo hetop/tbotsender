@@ -90,7 +90,7 @@
                 </li>
                 <ol style="list-style: none">
                     <li class="active navbar-right" style="text-align: right; font-size: 11px; color: grey; margin-right: 15px;">
-                        Telegram Bot Sender v.0.5.3α
+                        Telegram Bot Sender v.0.6.1α
                         <br>created by hetop</li>
                 </ol>
             </ul>
@@ -131,7 +131,7 @@
             </ul>
             <ol class="breadcrumb">
                 <li class="active navbar-right" style="text-align: right; font-size: 11px;">
-                    Telegram Bot Sender v.0.5.3α
+                    Telegram Bot Sender v.0.6.1α
                     <br>created by hetop</li>
             </ol>
         </div>

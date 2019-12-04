@@ -52,7 +52,7 @@
           <li><a href="./sendvoice.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить голосовое сообщение</a> </li>
           <li class="active"><a href="./sendvideonote.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить видеозаметку</a></li>
           <ol style="list-style: none">
-            <li class="active navbar-right" style="text-align: right; font-size: 11px; color: grey; margin-right: 15px;">Telegram Bot Sender v.0.5.3α<br>created by hetop</li>
+            <li class="active navbar-right" style="text-align: right; font-size: 11px; color: grey; margin-right: 15px;">Telegram Bot Sender v.0.6.1α<br>created by hetop</li>
           </ol>
         </ul>
       </div>
@@ -73,13 +73,13 @@
           <li class="active"><a href="./sendvideonote.php?token=<?php echo $_REQUEST['token']; ?>&chat_id=<?php echo $_REQUEST['chat_id']; ?>">Отправить видеозаметку</a></li>
         </ul>
         <ol class="breadcrumb">
-          <li class="active navbar-right" style="text-align: right; font-size: 11px;">Telegram Bot Sender v.0.5.3α<br>created by hetop</li>
+          <li class="active navbar-right" style="text-align: right; font-size: 11px;">Telegram Bot Sender v.0.6.1α<br>created by hetop</li>
         </ol>
       </div>
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <div class="alert alert-info"><b>Важно!</b> Соотношение сторон видео должно быть 1к1 (квадрат), например 720х720px. Так же размер файла не должен привышать 10Мб</div>
         <h3>Отправить видеозаметку <small>только в формате MP4</small></h3>
-        <form action="<?php echo "https://api.telegram.org/bot"?><?php echo $_REQUEST['token']; ?><?php echo "/sendVideoNote" ?>" method="post" enctype="multipart/form-data">
+        <form action="<?php echo "https://telegg.ru/orig/bot"?><?php echo $_REQUEST['token']; ?><?php echo "/sendVideoNote" ?>" method="post" enctype="multipart/form-data">
           <input type="text" name="chat_id" value="<?php echo $_REQUEST['chat_id']; ?>" style="display: none;" />
 
           <div class="input-group">
@@ -153,7 +153,7 @@
               var recipient = (json.result.chat.first_name + ' ' + json.result.chat.last_name);
             }
             var recipient = recipient.replace('undefined','');
-            $('#api').html('<p><b>Статус: </b>Отправлено</p><p><b>ID сообщения: </b>' + json.result.message_id + '</p><p><b>ID файла: </b>' + json.result.video_note.file_id + '</p><p><b>Получатель: </b>' + recipient + ' (<a href="https://t.me/' + json.result.chat.username + '">@' + json.result.chat.username + '</a>)' + '</p>');
+            $('#api').html('<p><b>Статус: </b>Отправлено</p><p><b>ID сообщения: </b>' + json.result.message_id + '</p><p><b>ID файла: </b>' + json.result.video_note.file_id + '</p><p><b>Получатель: </b>' + recipient + ' (<a href="https://tggm.ga/' + json.result.chat.username + '">@' + json.result.chat.username + '</a>)' + '</p>');
             progressBar.val(0);
             progressBar.val(0).text('');
             $('#json').html(JSON.stringify(json));
@@ -172,8 +172,8 @@
     });
     var chat_id = location.toString().slice(location.toString().search(/&chat_id=/)+0);
     var token = location.toString().slice(location.toString().search(/token=/)+6);
-    var getUpdates = $.getJSON('https://api.telegram.org/bot' + token.replace(chat_id, '') + '/getUpdates', function(json, status, success){
-      $('#api').html('<p><b>Статус: </b>Работает</p><p><b>Сервер: </b>https://api.telegram.org/</p><p><b>Токен: </b>' + token.replace(chat_id, '') + '</p>');
+    var getUpdates = $.getJSON('https://telegg.ru/orig/bot' + token.replace(chat_id, '') + '/getUpdates', function(json, status, success){
+      $('#api').html('<p><b>Статус: </b>Работает</p><p><b>Сервер: </b>https://telegg.ru/orig/</p><p><b>Токен: </b>' + token.replace(chat_id, '') + '</p>');
       $('#json').html(JSON.stringify(json));
     });
     getUpdates.fail(function(xhr, status, error) {
